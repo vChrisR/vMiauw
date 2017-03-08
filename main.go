@@ -20,7 +20,6 @@ type tContent struct {
 var c tContent
 
 func vMiauw(w http.ResponseWriter, r *http.Request) {
-	//t, err := template.New("vmtemplate").Parse("{{.Message}}")
 	t, err := template.New("vmtemplate").ParseFiles("index.tmpl")
 	if err != nil {
 		panic(err)
@@ -36,10 +35,7 @@ func main() {
 	c.InstanceIndex = os.Getenv("CF_INSTANCE_INDEX")
 
 	router := mux.NewRouter()
-
 	router.HandleFunc("/", vMiauw)
-
 	http.Handle("/", router)
-
 	http.ListenAndServe(":"+config.GetPort(), nil)
 }
