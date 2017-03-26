@@ -5,7 +5,8 @@ import (
 	"html/template"
 	"net/http"
 	"os"
-	"vMiauw/config"
+
+	"github.com/vchrisr/config"
 
 	"github.com/gorilla/mux"
 )
