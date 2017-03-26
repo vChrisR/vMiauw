@@ -6,5 +6,5 @@ image_resource:
 inputs:
   - name: vMiauw
 run:
-  path: vmiauw/ci/runUnitTests.sh
-  dir: vmiauw
+  path: vMiauw/ci/runUnitTests.sh
+  dir: vMiauw
