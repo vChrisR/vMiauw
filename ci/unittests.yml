@@ -6,8 +6,5 @@ image_resource:
 inputs:
   - name: vMiauw
 run:
-  path: sh
-  args:
-  - -exc
-  - |    
-    go test vMiauw/...
+  path: /bin/bash
+  args: vMiauw/ci/runUnitTests.sh
