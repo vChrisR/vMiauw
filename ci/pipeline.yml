@@ -1,5 +1,5 @@
 resources:
-- name: vmiauw
+- name: vMiauw
   type: git
   source:
     uri: https://github.com/vChrisR/vMiauw.git
@@ -7,7 +7,7 @@ resources:
 jobs:
 - name: unit-tests
   plan:
-  - get: vmiauw
+  - get: vMiauw
     trigger: true
   - task: unit-test-config
-    file: vmiauw/ci/unittests.yml
+    file: vMiauw/ci/unittests.yml
