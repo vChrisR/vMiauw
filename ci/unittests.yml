@@ -7,4 +7,4 @@ inputs:
   - name: vMiauw
 run:
   path: /bin/bash
-  args: vMiauw/ci/runUnitTests.sh
+  args: [ vMiauw/ci/runUnitTests.sh ]
