@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/vchrisr/config"
+	"github.com/vchrisr/vMiauw/config"
 
 	"github.com/gorilla/mux"
 )
