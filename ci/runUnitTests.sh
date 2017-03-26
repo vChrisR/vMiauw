@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-set -e
+set -e -u -x
 
 cd ./vmiauw
 
