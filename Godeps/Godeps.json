@@ -2,9 +2,6 @@
 	"ImportPath": "github.com/vchrisr/vMiauw",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/cloudfoundry-community/go-cfenv",
