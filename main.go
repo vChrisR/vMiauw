@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
 	"os"
@@ -28,14 +29,17 @@ func vMiauw(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	c.Message = "CatFoundry Demo"
+	c.Message = "This CatFoundry Demo instance is running on:"
 	c.InstanceID = os.Getenv("CF_INSTANCE_GUID")
-	c.Title = "vMiauw"
-	c.Head = "Hello VMUG"
+	c.Title = "vMiauw - CatFoundry Demo"
+	c.Head = "Hello VMUG UserCon!"
 	c.InstanceIndex = os.Getenv("CF_INSTANCE_INDEX")
 
 	router := mux.NewRouter()
 	router.HandleFunc("/", vMiauw)
 	http.Handle("/", router)
-	http.ListenAndServe(":"+config.GetPort(), nil)
+	err := http.ListenAndServe(":"+config.GetPort(), nil)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
