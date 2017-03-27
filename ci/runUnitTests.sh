@@ -2,5 +2,7 @@
 
 set -e -u -x
 
-export GOPATH=$PWD/vMiauw
+ls
+pwd
+
 go test ./...
