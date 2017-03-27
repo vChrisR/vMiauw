@@ -2,7 +2,7 @@
 
 set -e -u -x
 
-ls
-pwd
+export GOPATH=$(pwd)/gopath
+cd gopath/src/github.com/vchrisr/vMiauw/
 
-go test ./...
+godep go test ./...
