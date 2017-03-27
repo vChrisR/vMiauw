@@ -9,5 +9,5 @@ jobs:
   plan:
   - get: vMiauw
     trigger: true
-  - task: unit-test-config
+  - task: unit-test
     file: vMiauw/ci/unittests.yml

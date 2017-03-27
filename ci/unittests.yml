@@ -5,6 +5,6 @@ image_resource:
   source: {repository: golang}
 inputs:
   - name: vMiauw
+  path: gopath/src/github.com/vchrisr/vMiauw
 run:
-  path: /bin/bash
-  args: [ vMiauw/ci/runUnitTests.sh ]
+  path: gopath/src/github.com/vchrisr/vMiauw/ci/runUnitTests.sh
