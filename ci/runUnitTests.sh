@@ -2,5 +2,5 @@
 
 set -e -u -x
 
-go get -t -v ./...
+export GOPATH=$PWD/vMiauw
 go test ./...
