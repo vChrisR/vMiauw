@@ -20,9 +20,6 @@ jobs:
     trigger: true
   - task: unit-test
     file: vMiauw/ci/unittests.yml
-- name: cf-push
-  serial: true
-  plan:
   - put: cf-deploy-vMiauw
     params:
       manifest: vMiauw/manifest.yml
