@@ -33,7 +33,7 @@ func main() {
 	c.Message = "This CatFoundry Demo instance is running on:"
 	c.InstanceID = os.Getenv("CF_INSTANCE_GUID")
 	c.Title = "vMiauw - CatFoundry Demo"
-	c.Head = "Hello VMUG UserCon!"
+	c.Head = "Hello RWS!"
 	c.InstanceIndex = os.Getenv("CF_INSTANCE_INDEX")
 
 	router := mux.NewRouter()
