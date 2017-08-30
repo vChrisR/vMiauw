@@ -3,6 +3,7 @@ applications:
   instances: 1
   memory: 256M
   disk_quota: 512M
-  routes:
-  - route: vmiauw.cfapps.io
+#  routes:
+#  - route: vmiauw.cfapps.io
   stack: cflinuxfs2
+  buildpack: go_buildpack
