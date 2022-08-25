@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: vmiauw
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: vmiauw
+spec:
+  source:
+    git:
+      url: https://github.com/vChrisR/vMiauw.git
+      ref:
+        branch: master
